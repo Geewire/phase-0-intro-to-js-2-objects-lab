@@ -20,13 +20,13 @@ const employee = {
 
 {function deleteFromEmployeeByKey(employee, name){
     const newEmployee = {...employee};
-    delete newEmployee.name;
+    delete newEmployee[name];
     return newEmployee;
 }
 }
 
 {function destructivelyDeleteFromEmployeeByKey(employee, name){
-    delete employee["name"];
+    delete employee.name;
     return employee;
 
 }
